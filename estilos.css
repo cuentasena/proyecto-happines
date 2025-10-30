@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial Black', sans-serif;
+}
+
+body {
+  background: white;
+  color: #000;
+}
+
+/* CABECERA */
+.cab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFD400;
+  padding: 18px 50px;
+}
+
+/* Logo */
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Menú */
+.menu a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* BLOQUES BASE */
+.bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
+  flex-wrap: wrap;
+}
+.bloque img {
+  width: 45%;
+  border-radius: 8px;
+}
+.bloque .infor {
+  width: 45%;
+}
+.bloque h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.bloque p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+.bloque .btn {
+  background: #FFD400;
+  padding: 10px 25px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.bloque .btn:hover {
+  background: #000;
+  color: #FFD400;
+}
+
+/* COLORES */
+.blanco { background: #fff; }
+.gris { background: #f5f5f5; }
+.amarillo { background: #FFD400; }
+.negro { background: #000; color: #fff; }
+
+/* NOSOTROS */
+.conta {
+  text-align: center;
+}
+.conta img {
+  width: 60%;
+  margin: 30px 0;
+}
+.conta .btn {
+  background: #FFD400;
+  color: #000;
+}
+
+/* BOLETÍN */
+.boletin {
+  background: #fff;
+  align-items: stretch;
+}
+.boletin .formu {
+  width: 45%;
+  background: #000;
+  padding: 40px;
+}
+.boletin input, .boletin textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+}
+.boletin textarea {
+  height: 100px;
+}
+.boletin button {
+  background: #FFD400;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+}
+.boletin .infor {
+  width: 45%;
+  padding: 0 40px;
+}
+
+/* CONTACTO */
+#contacto {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#contacto img {
+  width: 80%;
+  margin: 30px 0;
+}
+.btn-negro {
+  background: #000;
+  color: #FFD400;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #FFD400;
+  padding: 50px 100px;
+}
+.conta-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.conta-footer ul {
+  list-style: none;
+}
+.conta-footer li {
+  margin-bottom: 10px;
+}
+.copy {
+  margin-top: 30px;
+  text-align: center;
+  color: #FFD400;
+}
+
+
+/* Media Query 352-480px - Celulares chicos */
+@media (min-width: 352px) and (max-width: 480px) {
+
+  .cab {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a {
+    margin: 5px;
+    font-size: 0.9em;
+  }
+
+  .bloque {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .bloque img,
+  .bloque .infor {
+    width: 100%;
+  }
+
+  .formu {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .boletin .infor {
+    width: 100%;
+    padding: 20px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .conta-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*  Media Query 481-768px - Tablets y smartphones grandes */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .bloque {
+    flex-direction: column;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .bloque img,
+  .bloque .infor {
+    width: 100%;
+  }
+
+  .menu a {
+    font-size: 1em;
+  }
+
+  .formu {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer {
+    padding: 40px 50px;
+  }
+}
+
+/* Media Query 769-920px - Laptops pequeñas */
+@media (min-width: 769px) and (max-width: 920px) {
+
+  .bloque {
+    padding: 60px 80px;
+  }
+
+  .bloque img,
+  .bloque .infor {
+    width: 48%;
+  }
+
+  .menu a {
+    font-size: 1.1em;
+  }
+
+  .formu {
+    width: 45%;
+  }
+}
+
+/* Media Query 921-1279px - Laptops grandes */
+@media (min-width: 921px) and (max-width: 1279px) {
+  .bloque {
+    padding: 80px 100px;
+  }
+  .menu a {
+    font-size: 1.1em;
+  }
+}
+
+/*  Media Query 1280px+ - Escritorios grandes */
+@media (min-width: 1280px) {
+  .bloque {
+    padding: 100px 150px;
+  }
+  .menu a {
+    font-size: 1.2em;
+  }
+}
