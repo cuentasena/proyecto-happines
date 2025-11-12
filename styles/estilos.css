@@ -401,3 +401,59 @@ footer {
   background: #000;
   color: #ffd400;
 }
+
+.free-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 80px;
+}
+
+.free-content h2 {
+  font-size: 6em;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 70%;
+  margin-top: 60px;
+}
+
+.free-content p {
+  font-size: 1.3em;
+  color: #333;
+  width: 75%;
+  font-weight: bolder;
+}
+
+.free-content a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: rgb(255, 196, 4);
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.free-content a:hover {
+  background: #000;
+  color: #ffd400;
+}
+.boletin input,
+.boletin textarea {
+  background: #000;
+  color: #ffd400;
+}
+.boletin input::placeholder,
+.boletin textarea::placeholder {
+  color: #ffd400;
+  opacity: 0.7; /* Slightly transparent */
+}
+.boletin input,
+.boletin textarea {
+  background: #000;
+  color: #ffd400; /* Cambiar el color del texto a amarillo */
+}
