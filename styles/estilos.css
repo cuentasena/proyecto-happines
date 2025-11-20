@@ -271,7 +271,6 @@ footer {
   }
 }
 
-/*  Media Query 1280px+ - Escritorios grandes */
 @media (min-width: 1280px) {
   .bloque {
     padding: 100px 150px;
@@ -281,7 +280,6 @@ footer {
   }
 }
 
-/* BLOQUE DE GRAFICOS */
 .caja-graf {
   background: #ffd400;
   display: flex;
