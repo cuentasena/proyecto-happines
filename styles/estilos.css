@@ -9,8 +9,6 @@ body {
   background: white;
   color: #000;
 }
-
-/* CABECERA */
 .cab {
   display: flex;
   justify-content: space-between;
@@ -19,7 +17,6 @@ body {
   padding: 18px 50px;
 }
 
-/* Logo */
 .logo-box {
   display: flex;
   align-items: center;
@@ -34,7 +31,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Menú */
 .menu a {
   color: #000;
   text-decoration: none;
@@ -42,7 +38,6 @@ body {
   font-weight: bold;
 }
 
-/* BLOQUES BASE */
 .bloque {
   display: flex;
   align-items: center;
@@ -93,8 +88,6 @@ body {
   background: #000;
   color: #fff;
 }
-
-/* NOSOTROS */
 .conta {
   text-align: center;
 }
@@ -107,7 +100,6 @@ body {
   color: #000;
 }
 
-/* BOLETÍN */
 .boletin {
   background: #fff;
   align-items: stretch;
@@ -138,7 +130,6 @@ body {
   padding: 0 40px;
 }
 
-/* CONTACTO */
 #contacto {
   flex-direction: column;
   align-items: center;
@@ -156,7 +147,6 @@ body {
   font-weight: bold;
 }
 
-/* FOOTER */
 footer {
   background: #000;
   color: #ffd400;
@@ -178,7 +168,6 @@ footer {
   color: #ffd400;
 }
 
-/* Media Query 352-480px - Celulares chicos */
 @media (min-width: 352px) and (max-width: 480px) {
   .cab {
     flex-direction: column;
@@ -228,7 +217,6 @@ footer {
   }
 }
 
-/*  Media Query 481-768px - Tablets y smartphones grandes */
 @media (min-width: 481px) and (max-width: 768px) {
   .bloque {
     flex-direction: column;
@@ -255,7 +243,6 @@ footer {
   }
 }
 
-/* Media Query 769-920px - Laptops pequeñas */
 @media (min-width: 769px) and (max-width: 920px) {
   .bloque {
     padding: 60px 80px;
@@ -275,7 +262,6 @@ footer {
   }
 }
 
-/* Media Query 921-1279px - Laptops grandes */
 @media (min-width: 921px) and (max-width: 1279px) {
   .bloque {
     padding: 80px 100px;
@@ -340,7 +326,6 @@ footer {
   width: 45%;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .caja {
     flex-direction: column;
@@ -450,10 +435,10 @@ footer {
 .boletin input::placeholder,
 .boletin textarea::placeholder {
   color: #ffd400;
-  opacity: 0.7; /* Slightly transparent */
+  opacity: 0.7; 
 }
 .boletin input,
 .boletin textarea {
   background: #000;
-  color: #ffd400; /* Cambiar el color del texto a amarillo */
+  color: #ffd400; 
 }
